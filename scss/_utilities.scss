@@ -1,0 +1,43 @@
+/* Utilities styles */
+a {
+    text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:visited {
+    color: $bg-primary-color;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: $secondary-color;
+    color: $bg-primary-color;
+    font-family: $font-Kalam;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    color: $secondary-color;
+    opacity: 0.8;
+}
+
+.bg-secondary {
+    width: 100%;
+    background-color: $bg-secondary-color;
+}
