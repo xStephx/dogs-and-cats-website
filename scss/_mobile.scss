@@ -1,0 +1,32 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        & .navbar-about-btn a,
+        & .navbar-contact-btn a {
+            font-size: 1.1rem;
+        }
+    }
+    .hero {
+        flex-direction: column;
+
+        & .heading {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-right: 0;
+            padding-top: 50px;
+        }
+    }
+
+    .arrow-down{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 10px;
+    
+        i{
+            font-size: 40px;
+            font-weight: bold;
+            color: $primary-color;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kalam", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.bg-secondary {
+  width: 100%;
+  background-color: rgb(229, 229, 229);
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-logo img {
+  max-width: 180px;
+  height: auto;
+}
+.navbar .navbar-about-btn a, .navbar .navbar-contact-btn a {
+  font-size: 1.5rem;
+  color: rgb(12, 21, 29);
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .heading {
+  text-align: left;
+  font-size: 2.5rem;
+  margin-right: 100px;
+  line-height: 1.2;
+}
+.hero .hero-image img {
+  max-width: 100%;
+}
+
+.arrow-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.arrow-down i {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(12, 21, 29);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar .navbar-about-btn a, .navbar .navbar-contact-btn a {
+    font-size: 1.1rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero .heading {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 0;
+    padding-top: 50px;
+  }
+  .arrow-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+  }
+  .arrow-down i {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(12, 21, 29);
+  }
+}/*# sourceMappingURL=style.css.map */
