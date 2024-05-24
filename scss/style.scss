@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-Kalam;
     display: flex;
@@ -53,10 +57,19 @@ body {
         font-size: 2.5rem;
         margin-right: 100px;
         line-height: 1.2;
+        position: relative;
+        animation: heading-hero;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
     }
 
     & .hero-image img {
         max-width: 100%;
+        position: relative;
+        animation: image-hero;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        z-index: 5;
     }
 }
 
@@ -64,7 +77,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    position: relative;
+    animation: arrow-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    z-index: 10;
 
     & i {
         font-size: 40px;
@@ -112,6 +130,11 @@ body {
         border-radius: 20px;
         height: auto;
         margin-right: 50px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    & .image img:hover{
+        border-radius: 50%;
     }
 
     & .affection-and-attention-content {
@@ -152,9 +175,11 @@ body {
     }
 
     p {
+        font-size: 1rem;
         margin: 10px 0;
     }
 }
 
+@import 'animations';
 
 @import 'mobile';
