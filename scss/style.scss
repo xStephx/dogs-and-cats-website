@@ -1,5 +1,6 @@
 @import 'config';
 
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +46,7 @@ body {
 
 }
 
-/* Hero section styles */
+/* Hero Section styles */
 .hero {
     display: flex;
     height: 600px;
@@ -73,6 +74,7 @@ body {
     }
 }
 
+/* Arrow Down Hero Section styles */
 .arrow-down {
     display: flex;
     align-items: center;
@@ -91,7 +93,7 @@ body {
     }
 }
 
-/* About Us Section */
+/* About Us Section styles */
 .about {
     display: flex;
     flex-direction: column;
@@ -119,7 +121,7 @@ body {
     }
 }
 
-/* Affection & Attention Section */
+/* Affection & Attention Section styles */
 .affection-and-attention {
     display: flex;
     align-items: center;
@@ -160,7 +162,7 @@ body {
     }
 }
 
-/* Footer Section */
+/* Footer Section styles */
 .contact {
     display: flex;
     flex-direction: column;
